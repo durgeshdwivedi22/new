@@ -24,10 +24,6 @@ A modern and responsive **Finance Dashboard Web Application** built to track inc
 
 ---
 
-## 📸 Screenshots
-
-> Add your project screenshots here  
-> (Recommended: dashboard view, charts, UI)
 
 ---
 

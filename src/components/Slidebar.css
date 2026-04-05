@@ -1,0 +1,177 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 60px; /* match navbar height */
+  left: 0;
+  width: 240px;
+  height: calc(100vh - 60px);
+
+  background: white;
+  border-right: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.logo h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+/* Status */
+.status {
+  margin-top: 10px;
+  font-size: 12px;
+  color: green;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: green;
+  border-radius: 50%;
+}
+
+/* Navigation */
+.sidebar-nav {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Nav item */
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+
+  cursor: pointer;
+  background: transparent;
+  border: none;
+
+  transition: 0.2s;
+}
+
+/* Hover */
+.nav-item:hover {
+  background: #f3f4f6;
+}
+
+/* Active */
+.nav-item.active {
+  background: #e0edff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Icon */
+.nav-icon {
+  background: #f3f4f6;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* Text */
+.nav-text {
+  flex: 1;
+  text-align: left;
+}
+.sidebar {
+  position: fixed;
+}
+.nav-text small {
+  display: block;
+  font-size: 11px;
+  color: gray;
+}
+
+/* Badge */
+.badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  background: #e5e7eb;
+  border-radius: 999px;
+}
+
+/* Arrow */
+.arrow {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.nav-item:hover .arrow {
+  opacity: 1;
+}
+
+/* Footer */
+.sidebar-footer {
+  padding: 15px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.tip-box {
+  background: #fef3c7;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.tip-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Dark mode */
+.dark .sidebar {
+  background: #1f2937;
+  color: white;
+}
+
+.dark .nav-item:hover {
+  background: #374151;
+}
+
+.dark .nav-item.active {
+  background: #1e40af;
+  color: white;
+}
+
+.dark .nav-text small {
+  color: gray;
+}
